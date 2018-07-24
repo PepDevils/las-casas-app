@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="25px"
+    android:minWidth="25px">
+
+    <include
+        android:id="@id/barra_titulo"
+        layout="@layout/barra_titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="25px"
+        android:minWidth="25px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/frameLayout"
+        android:layout_below="@+id/barra_titulo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="ENCONTRE A SUA CASA DE SONHO"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/text_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_titulo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="22dp"
+                android:text="TIPO DE IMÓVEL"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <FrameLayout
+                android:id="@+id/spinner_tipoF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_tipo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="1dp">
+                    <Spinner
+                        android:id="@+id/spinner_tipo"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_imovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_tipoF"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="IMÓVEL"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <FrameLayout
+                android:id="@+id/spinner_imovelF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_imovel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_imovel"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_quartos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_imovelF"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="QUARTOS"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <FrameLayout
+                android:id="@+id/spinner_quartosF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_quartos"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_quartos"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_localidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_quartosF"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="LOCALIDADE"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <FrameLayout
+                android:id="@+id/spinner_localidadeF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_localidade"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_localidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_freguesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_localidadeF"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="FREGUESIA"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <FrameLayout
+                android:id="@+id/spinner_freguesiaF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_freguesia"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/white">
+                    <Spinner
+                        android:id="@+id/spinner_freguesia"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="2dp"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/separador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_freguesiaF"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:text="PREÇO MÍN €"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <FrameLayout
+                        android:id="@+id/spinner_minF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_min"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/lascasasColorPrimary">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:background="@color/white">
+                            <Spinner
+                                android:id="@+id/spinner_min"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginBottom="2dp"/>
+                        </FrameLayout>
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="PREÇO MAX €"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <FrameLayout
+                        android:id="@+id/spinner_maxF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_max"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/lascasasColorPrimary">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:background="@color/white">
+                            <Spinner
+                                android:id="@+id/spinner_max"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginBottom="2dp"/>
+                        </FrameLayout>
+                    </FrameLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/botao_encontrar"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_below="@id/separador"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_red"
+                android:text="ENCONTRAR IMÓVEL!"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Space
+                android:id="@+id/space1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/botao_encontrar"
+                android:fadeScrollbars="true"
+                android:minHeight="15dp"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

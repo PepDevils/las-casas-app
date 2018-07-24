@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="25px"
+    android:minWidth="25px"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/barra_titulo"
+        layout="@layout/barra_titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="25px"
+        android:minWidth="25px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/frameLayout"
+        android:layout_below="@+id/barra_titulo">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25px"
+            android:minWidth="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="25px"
+                android:minWidth="25px"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/CMBackgroundGray"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Titulo Mesmo Mesmo Grande Da Casa!!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_titulo_casa" />
+
+
+                <custom_banner.Gallery
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    banner:bb_scale="0.5625"
+                    banner:bib_indicatorCornerRadius="2dp"
+                    banner:bib_indicatorHeight="8dp"
+                    banner:bib_indicatorWidth="8dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/CMCPrimary"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:id="@+id/textID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:text="ID: xxxx - xxx"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_id_casa" />
+
+                    <TextView
+                        android:id="@+id/textPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:text="360.000€"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_preco_casa" />
+                </RelativeLayout>
+
+
+                <com.bluejamesbond.text.DocumentView xmlns:ext="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/textDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    ext:documentView_antialias="true"
+                    ext:documentView_cacheConfig="auto_quality"
+                    ext:documentView_hyphen="-"
+                    ext:documentView_insetPadding="2dp"
+                    ext:documentView_insetPaddingBottom="2dp"
+                    ext:documentView_insetPaddingLeft="2dp"
+                    ext:documentView_insetPaddingRight="5dp"
+                    ext:documentView_insetPaddingTop="2dp"
+                    ext:documentView_lineHeightMultiplier="1.6"
+                    ext:documentView_maxLines="4000"
+                    ext:documentView_offsetX="1dp"
+                    ext:documentView_offsetY="1dp"
+                    ext:documentView_reverse="false"
+                    ext:documentView_text="@string/DEZ_fina"
+                    ext:documentView_textAlignment="justified"
+                    ext:documentView_textColor="@color/CMBackgroundGray"
+                    ext:documentView_textFormat="plain"
+                    ext:documentView_textSize="12sp"
+                    ext:documentView_textTypefacePath="fonts/CooperHewitt-Semibold.otf"
+                    ext:documentView_wordSpacingMultiplier="1.2" />
+
+         
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:paddingTop="0dp"
+                     />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/coracao" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/CMCSecondary">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/white">
+
+                        <Button
+                            android:id="@+id/call"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_white"
+                            android:drawableEnd="@drawable/seta"
+                            android:drawableRight="@drawable/seta"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:text="Contacte-nos/Visitar Imóvel"
+                            android:textAllCaps="true"
+                            android:textColor="@color/CMTextColor"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/CMCSecondary">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/white">
+
+                        <Button
+                            android:id="@+id/visit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_white"
+                            android:drawableEnd="@drawable/seta"
+                            android:drawableRight="@drawable/seta"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:text="Rota até Imóvel (gps)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/CMTextColor"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

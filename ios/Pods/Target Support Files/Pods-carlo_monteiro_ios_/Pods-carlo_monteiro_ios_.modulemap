@@ -1,0 +1,6 @@
+framework module Pods_carlo_monteiro_ios_ {
+  umbrella header "Pods-carlo_monteiro_ios_-umbrella.h"
+
+  export *
+  module * { export * }
+}

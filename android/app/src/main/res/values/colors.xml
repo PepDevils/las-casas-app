@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff424242</color>
+    <color name="colorPrimaryDark">#711417</color>
+    <color name="colorAccent">#B21F24</color>
+
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+
+
+    <!--my colors - lascasas-->
+    <color name="CMCPrimary">#B21F24</color>
+    <color name="CMCSecondary">#ff757575</color>
+    <color name="CMTextColor">#ff616161</color>
+    <color name="CMBackgroundGray">#ff303030</color>
+    <color name="whiteCoracao">#FAFAFA</color>
+    <color name="colorButtonTounch">#B6B6B6</color>
+
+
+    <!--Cores Gerais-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparente">#80FFFFFF</color>
+
+    <!--DezVezsesDez-->
+    <color name="x_pink">#E91E63</color>
+    <color name="x_green">#30b462</color>
+    <color name="x_lime">#c2d962</color>
+    <color name="x_orange">#df9d60</color>
+    <color name="x_blue">#0777b3</color>
+    <color name="x_burgundy">#442b3a</color>
+    <color name="x_gray">#4f4550</color>
+
+
+
+    <!--FoatingActionButtonColors-->
+    <color name="fab_primary">#FFFFFF</color>
+    <color name="fab_primary_pressed">#ff757575</color>
+    <color name="fab_ripple">#ff616161</color>
+
+</resources>

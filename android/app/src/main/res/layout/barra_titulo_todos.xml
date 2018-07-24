@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barra_titulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:background="@color/CMCPrimary">
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@color/CMCPrimary"
+        android:inputType="text"
+        android:text="TODOS OS IMÓVEIS"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_label_C"
+        android:textStyle="bold"
+        android:typeface="normal"/>
+</android.support.v7.widget.Toolbar>

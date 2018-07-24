@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CooperHewitt-Semibold.otf">
+            <string>CooperHewitt-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="carlo_monteiro_ios_" customModuleProvider="target">
+            <connections>
+                <outlet property="ContentView" destination="KkJ-kt-jK8" id="HeJ-ml-tJa"/>
+                <outlet property="ScrollView" destination="Jh1-Nd-CAs" id="t0x-Q7-03V"/>
+                <outlet property="bt_cancelar" destination="VCM-oS-xOF" id="4dL-3R-Z57"/>
+                <outlet property="bt_registar" destination="bDY-al-gVD" id="hcw-K7-Ted"/>
+                <outlet property="textEmail" destination="nIs-Pn-aiQ" id="bxB-Kc-M3s"/>
+                <outlet property="textSenha" destination="AOI-DI-z0m" id="52Z-We-ET8"/>
+                <outlet property="textSenhaRepetir" destination="cQo-aY-ySB" id="eEa-qE-syg"/>
+                <outlet property="textUser" destination="bGi-It-Ols" id="SPM-cC-OkE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="RegisterViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh1-Nd-CAs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-kt-jK8">
+                            <rect key="frame" x="8" y="8" width="359" height="659"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Indique o seu nome de utilizador" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3i-Ne-9RJ">
+                                    <rect key="frame" x="8" y="34" width="281" height="21"/>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-It-Ols">
+                                    <rect key="frame" x="8" y="63" width="268" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Escreva o seu email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHD-BM-LuX">
+                                    <rect key="frame" x="8" y="34" width="281" height="21"/>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIs-Pn-aiQ">
+                                    <rect key="frame" x="8" y="63" width="268" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Escreva a sua palavra passe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE3-4p-xQC">
+                                    <rect key="frame" x="8" y="113" width="281" height="21"/>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-DI-z0m">
+                                    <rect key="frame" x="8" y="142" width="268" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Repita a sua palavra passe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbL-QK-ctp">
+                                    <rect key="frame" x="8" y="197" width="281" height="21"/>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQo-aY-ySB">
+                                    <rect key="frame" x="8" y="226" width="268" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-al-gVD">
+                                    <rect key="frame" x="176" y="300" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.69803921570000005" green="0.1215686275" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="V9z-dr-4Of"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="15"/>
+                                    <state key="normal" title="REGISTAR">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressedREGISTAR:" destination="-1" eventType="touchUpInside" id="YdH-wb-CTt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCM-oS-xOF">
+                                    <rect key="frame" x="8" y="300" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.69803921570000005" green="0.1215686275" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="tHE-wH-1bL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="CooperHewitt-Semibold" family="Cooper Hewitt" pointSize="15"/>
+                                    <state key="normal" title="CANCELAR">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressedCANCELAR:" destination="-1" eventType="touchUpInside" id="E9k-pi-LrL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="nIs-Pn-aiQ" firstAttribute="top" secondItem="SHD-BM-LuX" secondAttribute="bottom" constant="8" symbolic="YES" id="0ag-d6-yad"/>
+                                <constraint firstItem="f3i-Ne-9RJ" firstAttribute="leading" secondItem="SHD-BM-LuX" secondAttribute="leading" id="1Fg-Hi-Zzj"/>
+                                <constraint firstAttribute="height" constant="600" id="4PW-gJ-ofs"/>
+                                <constraint firstItem="cQo-aY-ySB" firstAttribute="top" secondItem="dbL-QK-ctp" secondAttribute="bottom" constant="8" symbolic="YES" id="4tW-xk-UsZ"/>
+                                <constraint firstItem="AOI-DI-z0m" firstAttribute="leading" secondItem="dbL-QK-ctp" secondAttribute="leading" id="5Qf-IT-RrE"/>
+                                <constraint firstItem="nIs-Pn-aiQ" firstAttribute="trailing" secondItem="KkJ-kt-jK8" secondAttribute="trailingMargin" id="7k6-3V-BeW"/>
+                                <constraint firstItem="VCM-oS-xOF" firstAttribute="leading" secondItem="KkJ-kt-jK8" secondAttribute="leading" constant="10" id="8kn-4y-xix"/>
+                                <constraint firstItem="VCM-oS-xOF" firstAttribute="top" secondItem="cQo-aY-ySB" secondAttribute="bottom" constant="44" id="9C1-d2-hNU"/>
+                                <constraint firstItem="bGi-It-Ols" firstAttribute="trailing" secondItem="nIs-Pn-aiQ" secondAttribute="trailing" id="A00-SE-tTO"/>
+                                <constraint firstItem="nIs-Pn-aiQ" firstAttribute="trailing" secondItem="AOI-DI-z0m" secondAttribute="trailing" id="BV1-Cc-dMs"/>
+                                <constraint firstItem="bGi-It-Ols" firstAttribute="leading" secondItem="f3i-Ne-9RJ" secondAttribute="leading" id="BX1-lr-isi"/>
+                                <constraint firstItem="ZE3-4p-xQC" firstAttribute="top" secondItem="nIs-Pn-aiQ" secondAttribute="bottom" constant="20" id="G1j-Id-FXD"/>
+                                <constraint firstItem="f3i-Ne-9RJ" firstAttribute="top" secondItem="KkJ-kt-jK8" secondAttribute="top" constant="5" id="GpK-zQ-ct4"/>
+                                <constraint firstAttribute="trailing" secondItem="SHD-BM-LuX" secondAttribute="trailing" constant="-5" id="GqG-ad-d5h"/>
+                                <constraint firstAttribute="trailing" secondItem="bDY-al-gVD" secondAttribute="trailing" constant="10" id="JIa-0L-q4n"/>
+                                <constraint firstItem="nIs-Pn-aiQ" firstAttribute="leading" secondItem="ZE3-4p-xQC" secondAttribute="leading" id="OVX-iL-7tx"/>
+                                <constraint firstItem="dbL-QK-ctp" firstAttribute="leading" secondItem="cQo-aY-ySB" secondAttribute="leading" id="QhQ-vY-80i"/>
+                                <constraint firstItem="AOI-DI-z0m" firstAttribute="top" secondItem="ZE3-4p-xQC" secondAttribute="bottom" constant="8" symbolic="YES" id="SGB-Ju-e7l"/>
+                                <constraint firstItem="bDY-al-gVD" firstAttribute="top" secondItem="cQo-aY-ySB" secondAttribute="bottom" constant="44" id="YQ6-sN-pUP"/>
+                                <constraint firstItem="SHD-BM-LuX" firstAttribute="trailing" secondItem="ZE3-4p-xQC" secondAttribute="trailing" id="Ym9-4c-YE0"/>
+                                <constraint firstItem="ZE3-4p-xQC" firstAttribute="leading" secondItem="AOI-DI-z0m" secondAttribute="leading" id="c8I-ax-Zrd"/>
+                                <constraint firstItem="bGi-It-Ols" firstAttribute="top" secondItem="f3i-Ne-9RJ" secondAttribute="bottom" constant="8" id="dDo-vF-2Bq"/>
+                                <constraint firstItem="SHD-BM-LuX" firstAttribute="leading" secondItem="nIs-Pn-aiQ" secondAttribute="leading" id="dua-qY-vbl"/>
+                                <constraint firstItem="f3i-Ne-9RJ" firstAttribute="trailing" secondItem="SHD-BM-LuX" secondAttribute="trailing" id="elw-lT-qo8"/>
+                                <constraint firstItem="SHD-BM-LuX" firstAttribute="leading" secondItem="KkJ-kt-jK8" secondAttribute="leadingMargin" id="kEB-6m-LBf"/>
+                                <constraint firstItem="ZE3-4p-xQC" firstAttribute="trailing" secondItem="dbL-QK-ctp" secondAttribute="trailing" id="mzB-wO-5Ax"/>
+                                <constraint firstItem="SHD-BM-LuX" firstAttribute="top" secondItem="bGi-It-Ols" secondAttribute="bottom" constant="8" id="n26-C9-95g"/>
+                                <constraint firstItem="AOI-DI-z0m" firstAttribute="trailing" secondItem="cQo-aY-ySB" secondAttribute="trailing" id="odZ-Ln-ttW"/>
+                                <constraint firstItem="dbL-QK-ctp" firstAttribute="top" secondItem="AOI-DI-z0m" secondAttribute="bottom" constant="20" id="tm5-wK-ENa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="KkJ-kt-jK8" firstAttribute="centerX" secondItem="Jh1-Nd-CAs" secondAttribute="centerX" id="LZc-LW-ceZ"/>
+                        <constraint firstItem="KkJ-kt-jK8" firstAttribute="bottom" secondItem="Jh1-Nd-CAs" secondAttribute="bottomMargin" id="SVr-zH-iw0"/>
+                        <constraint firstItem="KkJ-kt-jK8" firstAttribute="trailing" secondItem="Jh1-Nd-CAs" secondAttribute="trailingMargin" id="kI4-Qa-tOv"/>
+                        <constraint firstItem="KkJ-kt-jK8" firstAttribute="top" secondItem="Jh1-Nd-CAs" secondAttribute="topMargin" id="r1o-zr-5LP"/>
+                        <constraint firstItem="KkJ-kt-jK8" firstAttribute="leading" secondItem="Jh1-Nd-CAs" secondAttribute="leadingMargin" id="yv2-Fa-qcc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jh1-Nd-CAs" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="K99-8g-k3Y"/>
+                <constraint firstItem="Jh1-Nd-CAs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dtI-Li-rdn"/>
+                <constraint firstItem="Jh1-Nd-CAs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fq9-3d-b7k"/>
+                <constraint firstItem="Jh1-Nd-CAs" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="vKQ-0R-Us8"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="84.5"/>
+        </view>
+    </objects>
+</document>

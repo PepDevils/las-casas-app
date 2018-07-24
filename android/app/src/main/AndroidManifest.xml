@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pepdevils.lascasas">
+
+    <!-- Para detectar a conexão á internet -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <!--
+      GET_ACCOUNTS is only required for GCM on devices running Android lower than
+      4.0.4. You may leave out this permission if you are targetting 4.0.4+.
+    -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+      ja fiz
+    -->
+    <permission
+        android:name="com.pepdevils.lascasas.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.pepdevils.lascasas.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyErro"
+        android:allowBackup="true"
+        android:excludeFromRecents="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="false">
+
+        <!-- Parse API begin -->
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="f8LRbMJSAkpMs0of5idKenTogvijhSouD6wiIYSM" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="oSB4d6UPwmy56f5sYzyqe9zwsPQ9ddDJ02RGZpfP" />
+        <!-- Parse API end -->
+
+        <activity
+            android:name=".Activity_Loading"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Destaques"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registo"
+            android:theme="@style/AppTheme.CustomThemeRegisto" />
+        <activity
+            android:name=".MudarPass"
+            android:theme="@style/AppTheme.CustomThemeRegisto" />
+        <activity
+            android:name=".Activity_Procura"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_AreaPessoal"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_DDD"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_IniciarSessao"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".Activity_PaginaCasa"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_PesquisaResultado"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_SobreNos"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_TerminarSessao"
+            android:noHistory="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Activity_Favoritos"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- GOOGLE MAPS API -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <!--android:value="@string/google_maps_key"-->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="nvkskjfsnfkfsdkxxxiudfkds"
+             />
+       <!-- <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="xxjhbaxjhbasjhxbjassxas" />-->
+        <!-- END GOOGLE MAPS API -->
+
+        <!-- GOOGLE+ logIn -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- GOOGLE+ logIn -->
+
+        <!-- FACEBOOK logIn -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- para poder partilhar conteudo no mural -->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProviderxxxxxxxxxx"
+            android:exported="true" />
+        <!-- FACEBOOK logIn -->
+
+
+        <!-- Parse API begin -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. ja fiz -->
+                <category android:name="com.pepdevils.lascasas" />
+            </intent-filter>
+        </receiver>
+        <!-- Parse API end -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="25dp"
+    android:minWidth="25dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="25px"
+        android:minWidth="25px" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/frameLayout"
+        android:layout_below="@id/barra_titulo">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="0dp">
+
+            <TextView
+                android:id="@+id/text_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/CMCPrimary"
+                android:gravity="center"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp"
+                android:text="ÁREA PESSOAL"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@color/CMCSecondary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/alterar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_white"
+                        android:drawableRight="@drawable/seta"
+                        android:drawableEnd="@drawable/seta"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:text="ALTERAR PASSE"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/CMTextColor" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@color/CMCPrimary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/favoritos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/coracao_seta"
+                        android:drawableEnd="@drawable/coracao_seta"
+                        android:background="@drawable/selector_white"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:text="favoritos"
+                        android:textAllCaps="true"
+                        android:textColor="@color/CMTextColor" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@color/CMCSecondary">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/sobre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_white"
+                        android:drawableRight="@drawable/seta"
+                        android:drawableEnd="@drawable/seta"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textStyle="bold"
+                        android:text="sobre nós"
+                        android:textAllCaps="true"
+                        android:textColor="@color/CMTextColor" />
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@color/CMCSecondary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/gostou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_white"
+                        android:drawableRight="@drawable/seta"
+                        android:drawableEnd="@drawable/seta"
+                        android:gravity="center_vertical"
+                        android:layerType="none"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textStyle="bold"
+                        android:text="gostou da app?"
+                        android:textAllCaps="true"
+                        android:textColor="@color/CMTextColor" />
+                </FrameLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="11dp"
+                android:clickable="true"
+                android:background="@color/CMCrSecondary">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/terminarSessao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_white"
+                        android:drawableRight="@drawable/seta"
+                        android:drawableEnd="@drawable/seta"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textStyle="bold"
+                        android:text="Terminar sessão"
+                        android:textAllCaps="true"
+                        android:textColor="@color/CMTextColor" />
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

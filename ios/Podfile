@@ -1,0 +1,13 @@
+platform:ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+target 'carlo_monteiro_ios_' do
+    pod 'GoogleMaps'
+    pod 'Google/SignIn'
+    pod 'Firebase'
+    pod 'Firebase/Messaging'
+    pod 'ImageSlideshow'
+    pod 'ImageSlideshow/SDWebImage'
+    use_frameworks!
+    pod 'KCFloatingActionButton'
+end

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Quando esta selecionado-->
+    <!--nao se ve-->
+    <item
+        android:drawable="@drawable/button_selected"
+        android:state_focused="true"
+        android:state_pressed="true" />
+
+    <!--Quando esta a ser clicado-->
+    <item
+        android:drawable="@drawable/button_selected"
+        android:state_focused="false"
+        android:state_pressed="true" />
+
+    <!--Estado Inicial-->
+    <item android:drawable="@drawable/button_gps" />
+
+</selector>

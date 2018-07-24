@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/barra_titulo"
+        layout="@layout/barra_titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:minHeight="25px"
+            android:minWidth="25px" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/frameLayout"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="55dp"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/email"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="12dp"
+                    android:inputType="textPassword" />
+
+
+                <TextView
+                    android:id="@+id/regrets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/password"
+                    android:layout_below="@id/password"
+                    android:layout_marginTop="8dp"
+                    android:text="esqueceu-se da palavra passe?"
+                    android:textColor="@color/CMCPrimary"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/regrets"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_red"
+                    android:text="INICIAR SESSÃO"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/login"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/selector_gray"
+                    android:text="REGISTE-SE"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/register"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="50dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/image_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/selector_facebook"
+                        android:paddingBottom="11dp"
+                        android:paddingLeft="11dp"
+                        android:paddingTop="11dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/social_facebook" />
+
+                    <Button
+                        android:id="@+id/button_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/image_facebook"
+                        android:background="@drawable/selector_facebook"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="INICIAR SESSÃO COM O FACEBOOK"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/google"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@id/facebook"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignRight="@id/facebook"
+                    android:layout_below="@id/facebook"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="17dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/image_google"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:paddingBottom="11dp"
+                        android:paddingLeft="11dp"
+                        android:paddingTop="11dp"
+                        android:background="@drawable/selector_google"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/social_google" />
+
+                    <Button
+                        android:id="@+id/button_google"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/image_google"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/selector_google"
+                        android:text="INICIAR SESSÃO COM O GOOGLE+"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/google"
+                    android:minHeight="15dp" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

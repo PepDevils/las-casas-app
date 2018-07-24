@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frameLayout" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/frameLayout">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="35dp"
+            android:paddingLeft="35dp"
+            android:paddingTop="75dp">
+            <TextView
+                android:text="Já vai embora?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_titulo"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <Button
+                android:text="Voltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltar"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:background="@drawable/selector_red"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:requiresFadingEdge="none"
+                android:fadingEdge="none"
+                android:layerType="none"
+                android:textColor="@color/white" />
+            <Button
+                android:text="Encerrar Sessão"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dadosPessoais"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:background="@drawable/selector_gray"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="11dp"
+                android:requiresFadingEdge="none"
+                android:fadingEdge="none"
+                android:layerType="none"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
